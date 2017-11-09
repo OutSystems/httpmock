@@ -1,0 +1,12 @@
+[
+  {
+    "urlFilter": ".*",
+    "headers": {
+      "Content-Type": "text/plain"
+    },
+	"encoding": "UTF-8",
+    "method": "GET",
+    "response": "No rule was matched...",
+	"status": 200
+  }
+]
