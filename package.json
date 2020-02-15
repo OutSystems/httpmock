@@ -6,19 +6,19 @@
     "iconv-lite": "~0.2.11",
     "optimist": "~0.6.0"
   },
-  "description": "httpmock",
+  "description": "A simple http server mock to use in integration tests of any language",
   "devDependencies": {},
   "keywords": [
     "http",
     "mock"
   ],
   "main": "bin/httpmock.js",
-  "name": "httpmock",
+  "name": "@outsystems/httpmock",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": "",
   "scripts": {
     "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
   },
-  "version": "0.1.0-jmr"
+  "version": "1.1.0"
 }

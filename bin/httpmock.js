@@ -133,7 +133,7 @@ var server = http.createServer(function(request, response) {
 	});
 
 	request.on('end', function() {
-		console.log(jsonutils.sortedStringify(requestDetails, { indent: '  ' }));
+		console.log(JSON.stringify(jsonutils.sortedStringify(requestDetails, { indent: '  ' })));
 		
 		var matchingRule = getMatchingConfigRule(request.url, request.method);
 		trace('Response rule: ' + jsonutils.inspect(matchingRule));
