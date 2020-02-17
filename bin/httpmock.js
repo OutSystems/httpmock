@@ -164,7 +164,9 @@ var server = http.createServer(function(request, response) {
 
     request.on("end", function() {
         console.log(
-            JSON.stringify(jsonutils.sortedStringify(requestDetails, { indent: "  " })
+            JSON.stringify(
+                jsonutils.sortedStringify(requestDetails, { indent: "  " }
+            )
         );
 
         var matchingRule = getMatchingConfigRule(request.url, request.method);
