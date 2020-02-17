@@ -1,6 +1,7 @@
 ﻿var fs = require("fs");
 var path = require("path");
 var http = require("http");
+var zlib = require("zlib");
 var jsonutils = require("../lib/jsonutils");
 var iconv = require("iconv-lite");
 
@@ -183,6 +184,14 @@ var server = http.createServer(function(request, response) {
                         "Content-Encoding": "gzip"
                     });
                     zlib.gzip(matchingRule.response, (err, buffer) => {
+                        if (err) throw err;
+                        response.end(buffer);
+                    });
+                } else if (acceptEncoding.match(/\bdeflate\b/)) {
+                    response.writeHead(matchingRule.status, {
+                        "Content-Encoding": "deflate"
+                    });
+                    zlib.deflate(matchingRule.response, (err, buffer) => {
                         if (err) throw err;
                         response.end(buffer);
                     });
