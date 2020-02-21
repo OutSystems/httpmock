@@ -165,7 +165,7 @@ var server = http.createServer(function(request, response) {
     request.on("end", function() {
         console.log(
             JSON.stringify(
-                jsonutils.sortedStringify(requestDetails, { indent: "  " }
+                jsonutils.sortedStringify(requestDetails, { indent: "  " })
             )
         );
 
