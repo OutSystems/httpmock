@@ -1,8 +1,10 @@
 # source
 node_modules
+test
 
 # github
 .github
+CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 renovate.json
 

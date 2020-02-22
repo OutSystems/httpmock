@@ -7,19 +7,22 @@
     "optimist": "~0.6.0"
   },
   "description": "A simple http server mock to use in integration tests of any language",
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "mocha-junit-reporter": "^1.23.3"
+  },
   "keywords": [
     "http",
     "mock"
   ],
-  "main": "bin/httpmock.js",
+  "main": "bin/httpmock",
   "name": "@outsystems/httpmock",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": "github:OutSystems/httpmock",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1"
+    "test": "mocha"
   },
   "version": "1.1.1"
 }
