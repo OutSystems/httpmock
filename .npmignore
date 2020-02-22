@@ -1,2 +1,10 @@
+# source
 node_modules
+
+# github
+.github
+CONTRIBUTING.md
+renovate.json
+
+# ci
 azure-pipelines.yml
