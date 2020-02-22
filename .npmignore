@@ -1,6 +1,7 @@
 # source
 node_modules
 test
+/*.tgz
 
 # github
 .github

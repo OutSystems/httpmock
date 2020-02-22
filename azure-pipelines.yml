@@ -27,6 +27,15 @@ steps:
     testRunner: JUnit
     testResultsFiles: '**/test-result.xml'
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: |
+      **\**
+      !**\node_modules\**
+      !**\.git\**
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
