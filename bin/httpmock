@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-require('./httpmock.js')
+var httpmock = require('../lib/httpmock.js')
+
+httpmock.listen();
