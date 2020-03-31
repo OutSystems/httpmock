@@ -3,7 +3,7 @@
     "name": "jmr"
   },
   "dependencies": {
-    "iconv-lite": "~0.2.11",
+    "iconv-lite": "~0.5.0",
     "optimist": "~0.6.0"
   },
   "description": "A simple http server mock to use in integration tests of any language",
