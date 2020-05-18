@@ -8,7 +8,7 @@
   },
   "description": "A simple http server mock to use in integration tests of any language",
   "devDependencies": {
-    "mocha": "7.1.1",
+    "mocha": "7.1.2",
     "mocha-junit-reporter": "1.23.3"
   },
   "keywords": [
