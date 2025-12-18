@@ -11,6 +11,9 @@
     "mocha": "11.7.5",
     "mocha-junit-reporter": "2.2.1"
   },
+  "overrides": {
+    "glob": "10.5.0"
+  },
   "keywords": [
     "http",
     "mock"
