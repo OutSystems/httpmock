@@ -13,9 +13,9 @@ jobs:
 - job: BuildAndTest
   timeoutInMinutes: 5
   steps:
-  - task: NodeTool@0
+  - task: UseNode@1
     inputs:
-      versionSpec: '20.x'
+      version: '20.x'
     displayName: 'Install Node.js'
 
   - script: npm install
